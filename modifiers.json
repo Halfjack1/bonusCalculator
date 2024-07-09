@@ -5,7 +5,21 @@
             "prof": [4,4,4],
             "ability": [7,7,7],
             "MAP": [0,-5,-10]
+        },
+        "toggle":{
+            "Hunt Prey": {"modifiers":[0,1,2], "state": true},
+            "Flat-Footed": {"modifiers":[2,2,2], "state": true},
+            "King's Blessing": {"modifiers":[2,2,2], "state": false},
+            "penetrating arrow": {"modifiers":[3,3,3], "state": true},
+            "DT Combo": {"modifiers":[8,8,8], "state": false},
+            "Shrike Rune": {"modifiers":[10,10,10], "state": false}
+        },
+        "dropdown":{
+            "Weapon":{
+                "Bowblade": [4,5,6],
+                "Breaker": [2,3,4],
+                "Mercy": [2,3,4]
+            }
         }
-
     }
 }

@@ -2,12 +2,17 @@ package calculator;
 
 import java.util.ArrayList;
 
-public class attackCalculator {
+import javax.swing.JLabel;
 
-    final private ArrayList<attackModifier> bonuses;
+public final class AttackCalculator {
 
-    public attackCalculator(ArrayList<attackModifier> bonuses){
+    final private ArrayList<AttackModifier> bonuses;
+    JLabel attackBonusLabel;
+
+    public AttackCalculator(ArrayList<AttackModifier> bonuses, GUI gui){
         this.bonuses = bonuses;
+        attackBonusLabel = gui.addLabel(attackBonusString());
+
     }
 
     public String attackBonusString() {
