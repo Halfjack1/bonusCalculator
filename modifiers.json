@@ -1,0 +1,11 @@
+{
+    "attackModifiers":{
+        "flat":{
+            "level": [10,10,10],
+            "prof": [4,4,4],
+            "ability": [7,7,7],
+            "MAP": [0,-5,-10]
+        }
+
+    }
+}
