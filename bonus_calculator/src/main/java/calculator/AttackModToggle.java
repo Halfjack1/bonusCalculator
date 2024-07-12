@@ -11,7 +11,7 @@ public class AttackModToggle extends AttackModifier{
         this.modifiers = modifiers;
         this.checkBox = gui.addCheckBox(name, state);
     }
-    public AttackModToggle(String name, int[] modifiers, GUI gui, JCheckBox checkBox){
+    public AttackModToggle(String name, int[] modifiers, JCheckBox checkBox){
         super(modifiers);
         this.modifiers = modifiers;
         this.checkBox = checkBox;

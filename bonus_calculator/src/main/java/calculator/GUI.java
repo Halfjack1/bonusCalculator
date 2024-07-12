@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -52,6 +53,24 @@ public class GUI {
         });
         frame.pack();
         return checkBox;
+    }
+    //adds a dropdown
+    public JComboBox<String> addDropdown(String[] elements){
+        JComboBox<String> dropdown = new JComboBox<>();
+        panel.add(dropdown);
+        for(String element : elements){
+            dropdown.addItem(element);
+        }
+        dropdown.addActionListener(new ActionListener() {
+            @Override
+            //recalculates the attack and damage when the dropdown is modified
+            public void actionPerformed(ActionEvent event) {
+                attackCalculator.attackBonusLabel.setText(attackCalculator.attackBonusString());
+
+            }
+        });
+        frame.pack();
+        return dropdown;
     }
     //gives the gui access to the attack calculator
     public void addAttackCalculator(AttackCalculator attackCalculator){

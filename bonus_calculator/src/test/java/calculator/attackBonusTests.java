@@ -28,12 +28,11 @@ public class attackBonusTests
     //tests it if it is on
     @Test
     public void attackModifierReturnTrue(){
-        GUI gui = Mockito.mock(GUI.class);
         JCheckBox checkBox = Mockito.mock(JCheckBox.class);
         when(checkBox.isSelected()).thenReturn(true);
 
         int[] testModifiers = {5,5,5};
-        AttackModToggle atkMod = new AttackModToggle("", testModifiers, gui,checkBox);
+        AttackModToggle atkMod = new AttackModToggle("", testModifiers,checkBox);
         int[] target = {5,5,5};
         int[] value = atkMod.getModifiers();
         assertArrayEquals(target, value);
@@ -41,12 +40,11 @@ public class attackBonusTests
     //tests it if it is off
     @Test
     public void attackModifierReturnFalse(){
-        GUI gui = Mockito.mock(GUI.class);
         JCheckBox checkBox = Mockito.mock(JCheckBox.class);
         when(checkBox.isSelected()).thenReturn(false);
 
         int[] testModifiers = {5,5,5};
-        AttackModToggle atkMod = new AttackModToggle("", testModifiers, gui,checkBox);
+        AttackModToggle atkMod = new AttackModToggle("", testModifiers,checkBox);
         int[] target = {0,0,0};
         int[] value = atkMod.getModifiers();
         assertArrayEquals(target, value);
@@ -54,14 +52,13 @@ public class attackBonusTests
     //tests getter from a dropdown attack modifier
     @Test
     public void attackModifierDropdown(){
-        GUI gui = Mockito.mock(GUI.class);
         JComboBox<String> dropdown = Mockito.mock(JComboBox.class);
         when(dropdown.getSelectedItem()).thenReturn("correct");
         Map<String,int[]> testModifiers = new HashMap<>();
         testModifiers.put("wrong", new int[] {10,10,10});
         testModifiers.put("correct", new int[] {0,0,0});
 
-        AttackModDropdown atkMod = new AttackModDropdown("", testModifiers, gui);
+        AttackModDropdown atkMod = new AttackModDropdown("", testModifiers, dropdown);
         int[] target = {0,0,0};
         int[] value = atkMod.getModifiers();
         assertArrayEquals(target, value);
@@ -69,12 +66,10 @@ public class attackBonusTests
     //tests the final string the attack calculator produces using the attack modifiers
     @Test
     public void calculatorString(){
-        GUI gui = Mockito.mock(GUI.class);
-
         ArrayList<AttackModifier> testBonuses = new ArrayList<>();
         testBonuses.add(new AttackModifier(new int[] {10,10,10}));
         testBonuses.add(new AttackModifier(new int[] {0,-5,-10}));
-        AttackCalculator atkCalc = new AttackCalculator(testBonuses, gui);
+        AttackCalculator atkCalc = new AttackCalculator(testBonuses);
         String target = "+10/+5/+0";
         String value = atkCalc.attackBonusString();
         assertEquals(target, value);

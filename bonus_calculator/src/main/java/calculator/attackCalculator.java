@@ -12,7 +12,9 @@ public final class AttackCalculator {
     public AttackCalculator(ArrayList<AttackModifier> bonuses, GUI gui){
         this.bonuses = bonuses;
         attackBonusLabel = gui.addLabel(attackBonusString());
-
+    }
+    public AttackCalculator(ArrayList<AttackModifier> bonuses){
+        this.bonuses = bonuses;
     }
 
     public String attackBonusString() {
