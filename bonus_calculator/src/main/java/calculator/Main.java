@@ -22,12 +22,19 @@ public class Main
         Map<String,int[]> flatAtkModsMap = objectMapper.convertValue(attackModifiersMap.get("flat"), new TypeReference<Map<String, int[]>>() {});
         
         Map<String,Object> toggleAtkModsMap = objectMapper.convertValue(attackModifiersMap.get("toggle"), new TypeReference<Map<String, Object>>() {});
-        
+        Map<String,Object> dropdownAtkModsMap = objectMapper.convertValue(attackModifiersMap.get("dropdown"), new TypeReference<Map<String,Object>>() {});
+
         //list of all attack modifiers
         ArrayList<AttackModifier> attackModifiersList = new ArrayList<>();
         //converts the flat attack modifiers into attackModifier objects and puts them in a list
         for(String i : flatAtkModsMap.keySet()){
             attackModifiersList.add(new AttackModifier(flatAtkModsMap.get(i)));
+        }
+        //converts the dropdown modifiers into AttackModDropdown objects and adds them to the list
+        for(String i : dropdownAtkModsMap.keySet()){
+            Map<String,int[]> dropdownAtkModModifiers = objectMapper.convertValue(dropdownAtkModsMap.get(i), new TypeReference<Map<String, int[]>>() {});
+            System.out.println(dropdownAtkModModifiers);
+            attackModifiersList.add(new AttackModDropdown(i,dropdownAtkModModifiers,gui));
         }
         //converts the toggled attack modifiers into attackModToggle objects and puts them in the list
         for(String i : toggleAtkModsMap.keySet()){

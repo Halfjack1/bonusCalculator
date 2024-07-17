@@ -10,6 +10,7 @@ public class AttackModDropdown extends AttackModifier{
     public AttackModDropdown(String name, Map<String,int[]> modifiers, GUI gui){
         super(null);
         this.modifiers = modifiers;
+        dropdown = gui.addDropdown(modifiers.keySet().toArray(new String[modifiers.keySet().size()]));
         
     }
     public AttackModDropdown(String name, Map<String,int[]> modifiers, JComboBox<String> dropdown){
