@@ -58,7 +58,7 @@ public class Main
         //list of all damage modifiers
         ArrayList<DamageModifier> dmgModifiersList = new ArrayList<>();
         
-        //converts the base damage modifiers into attackModifier objects and puts them in a list
+        //converts the base damage modifiers into DamageModifier objects and puts them in a list
         for(String i : baseDmgModsMap.keySet()){
             dmgModifiersList.add(new DamageModifier(baseDmgModsMap.get(i)));
         }
@@ -81,7 +81,5 @@ public class Main
         //creates damage bonus calculator
         DamageCalculator damageCalculator = new DamageCalculator(dmgModifiersList, gui);
         gui.addDamageCalculator(damageCalculator);
-
-        
     }
 }
