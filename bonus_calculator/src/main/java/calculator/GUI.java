@@ -17,6 +17,7 @@ public class GUI {
     private final JPanel panel;
 
     AttackCalculator attackCalculator;
+    DamageCalculator damageCalculator;
 
     //constructor that creates the window
     public GUI(){
@@ -49,6 +50,7 @@ public class GUI {
             //recalculates the attack and damage when the checkbox is toggled
             public void actionPerformed(ActionEvent event) {
                 attackCalculator.attackBonusLabel.setText(attackCalculator.attackBonusString());
+                damageCalculator.damageBonusLabel.setText(damageCalculator.damageBonusString());
             }
         });
         frame.pack();
@@ -66,7 +68,7 @@ public class GUI {
             //recalculates the attack and damage when the dropdown is modified
             public void actionPerformed(ActionEvent event) {
                 attackCalculator.attackBonusLabel.setText(attackCalculator.attackBonusString());
-
+                damageCalculator.damageBonusLabel.setText(damageCalculator.damageBonusString());
             }
         });
         frame.pack();
@@ -75,5 +77,8 @@ public class GUI {
     //gives the gui access to the attack calculator
     public void addAttackCalculator(AttackCalculator attackCalculator){
         this.attackCalculator = attackCalculator;
+    }
+    public void addDamageCalculator(DamageCalculator damageCalculator) {
+        this.damageCalculator = damageCalculator;
     }
 }

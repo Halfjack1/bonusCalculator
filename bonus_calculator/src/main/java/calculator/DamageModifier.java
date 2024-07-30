@@ -1,12 +1,13 @@
 package calculator;
 
 public class DamageModifier {
+    int[] modifier;
     DamageModifier(int[] modifier){
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.modifier = modifier;
     }
 
     int[] getModifier() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return modifier;
     }
 
 }
