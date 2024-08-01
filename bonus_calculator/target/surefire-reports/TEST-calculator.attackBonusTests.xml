@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calculator.attackBonusTests" time="0.137" tests="5" errors="3" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calculator.attackBonusTests" time="1.192" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\test-classes;c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\classes;C:\Users\tighe\.m2\repository\org\mockito\mockito-all\2.0.2-beta\mockito-all-2.0.2-beta.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\tighe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tighe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\test-classes;c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\classes;C:\Users\tighe\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\tighe\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\tighe\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\tighe\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\tighe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tighe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\tighe\Documents\OpenJDK-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\tighe\AppData\Local\Temp\surefire9645203014212953732\surefirebooter14754588093647823989.jar C:\Users\tighe\AppData\Local\Temp\surefire9645203014212953732 2024-08-01T11-17-45_824-jvmRun1 surefire12637947265936727940tmp surefire_08821869639880286319tmp"/>
+    <property name="sun.java.command" value="C:\Users\tighe\AppData\Local\Temp\surefire16547611940864974872\surefirebooter5643562946907490647.jar C:\Users\tighe\AppData\Local\Temp\surefire16547611940864974872 2024-08-01T11-50-27_897-jvmRun1 surefire649895173194100541tmp surefire_02634716140928116272tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\test-classes;c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\classes;C:\Users\tighe\.m2\repository\org\mockito\mockito-all\2.0.2-beta\mockito-all-2.0.2-beta.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\tighe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tighe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\test-classes;c:\Users\tighe\Documents\GitHub\bonusCalculator\bonusCalculator\bonus_calculator\target\classes;C:\Users\tighe\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\tighe\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\tighe\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\tighe\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\tighe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\tighe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tighe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\tighe"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\tighe\AppData\Local\Temp\surefire9645203014212953732\surefirebooter14754588093647823989.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\tighe\AppData\Local\Temp\surefire16547611940864974872\surefirebooter5643562946907490647.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-58"/>
@@ -58,27 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="attackModifierDropdown" classname="calculator.attackBonusTests" time="0.091">
-    <error type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
-	at calculator.attackBonusTests.attackModifierDropdown(attackBonusTests.java:55)
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @3ecf72fd
-	at calculator.attackBonusTests.attackModifierDropdown(attackBonusTests.java:55)
-</error>
-  </testcase>
-  <testcase name="attackModifierReturnFalse" classname="calculator.attackBonusTests" time="0.001">
-    <error message="Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
-	at calculator.attackBonusTests.attackModifierReturnFalse(attackBonusTests.java:43)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
-	at calculator.attackBonusTests.attackModifierDropdown(attackBonusTests.java:55)
-</error>
-  </testcase>
-  <testcase name="calculatorString" classname="calculator.attackBonusTests" time="0.01"/>
-  <testcase name="attackModifierReturn" classname="calculator.attackBonusTests" time="0.001"/>
-  <testcase name="attackModifierReturnTrue" classname="calculator.attackBonusTests" time="0">
-    <error message="Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
-	at calculator.attackBonusTests.attackModifierReturnTrue(attackBonusTests.java:31)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
-	at calculator.attackBonusTests.attackModifierDropdown(attackBonusTests.java:55)
-</error>
-  </testcase>
+  <testcase name="attackModifierDropdown" classname="calculator.attackBonusTests" time="1.05"/>
+  <testcase name="attackModifierReturnFalse" classname="calculator.attackBonusTests" time="0.104"/>
+  <testcase name="calculatorString" classname="calculator.attackBonusTests" time="0.011"/>
+  <testcase name="attackModifierReturn" classname="calculator.attackBonusTests" time="0"/>
+  <testcase name="attackModifierReturnTrue" classname="calculator.attackBonusTests" time="0.001"/>
 </testsuite>
