@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: calculator.damageBonusTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in calculator.damageBonusTests
+calculatorDice(calculator.damageBonusTests)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<{3=6, 5=1}> but was:<{6=3, 1=5}>
+	at calculator.damageBonusTests.calculatorDice(damageBonusTests.java:81)
+
+damageModifierReturnTrue(calculator.damageBonusTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at calculator.damageBonusTests.damageModifierReturnTrue(damageBonusTests.java:31)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+
+damageModifierDropdown(calculator.damageBonusTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at calculator.damageBonusTests.damageModifierDropdown(damageBonusTests.java:55)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+
+damageModifierReturnFalse(calculator.damageBonusTests)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at calculator.damageBonusTests.damageModifierReturnFalse(damageBonusTests.java:43)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+

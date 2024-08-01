@@ -66,7 +66,6 @@ public class Main
         //converts the dropdown modifiers into DamageModDropdown objects and adds them to the list
         for(String i : dropdownDmgModsMap.keySet()){
             Map<String,int[]> dropdownDmgModModifiers = objectMapper.convertValue(dropdownDmgModsMap.get(i), new TypeReference<Map<String, int[]>>() {});
-            System.out.println(dropdownDmgModModifiers);
             dmgModifiersList.add(new DamageModDropdown(i,dropdownDmgModModifiers,gui));
         }
 

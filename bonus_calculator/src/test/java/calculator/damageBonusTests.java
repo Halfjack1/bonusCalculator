@@ -74,8 +74,8 @@ public class damageBonusTests {
         DamageCalculator dmgCalc = new DamageCalculator(testBonuses);
 
         Map<Integer, Integer> target = new TreeMap<Integer,Integer>(){{
-            put(3,6);
-            put(5,1);
+            put(6,3);
+            put(1,5);
         }};
         Map<Integer,Integer> value = dmgCalc.getDamageDice();
         assertEquals(target, value);
