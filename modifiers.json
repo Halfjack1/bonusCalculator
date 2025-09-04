@@ -39,7 +39,7 @@
         },
         "dropdown":{
             "Weapon":{
-                "Bowblade": [[5,6]],
+                "Bowblade": [[5,6],[2,12]],
                 "Breaker": [[3,4]],
                 "Mercy": [[2,6]]
             },
