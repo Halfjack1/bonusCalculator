@@ -7,7 +7,6 @@
             "MAP": [0,-5,-10]
         },
         "toggle":{
-            "Hunt Prey": {"modifiers":[0,1,2], "state": true},
             "Flat-Footed": {"modifiers":[2,2,2], "state": true},
             "King's Blessing": {"modifiers":[2,2,2], "state": false},
             "penetrating arrow": {"modifiers":[3,3,3], "state": true},
@@ -28,13 +27,14 @@
         },
         "toggle":{
             "Psychic glyph": {"modifiers":[2,12], "state": true},
-            "Sneak Attack": {"modifiers":[1,6], "state": true},
+            "Precision": {"modifiers":[2,8], "state": true},
             "Propulsive": {"modifiers":[3,1], "state": true},
             "Melee": {"modifiers":[6,1], "state": false},
             "DT 1/turn": {"modifiers":[1,6], "state": false},
             "DT Combo": {"modifiers":[1,8], "state": false},
             "Shrike Rune": {"modifiers":[1,6], "state": false},
             "Breaker Bonus": {"modifiers":[1,6], "state": false},
+            "Nothing Personal": {"modifiers":[1,6], "state": false},
             "Salter Buff": {"modifiers":[7,1], "state": false}
         },
         "dropdown":{
